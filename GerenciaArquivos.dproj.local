@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/09/09 20:48:19.000.457,=C:\Users\55479\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/09 20:56:30.000.522,C:\Users\55479\Documents\Embarcadero\Studio\Projects\Arquivos\uListaDiretorio.fmx=C:\Users\55479\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2019/09/09 20:56:30.000.522,C:\Users\55479\Documents\Embarcadero\Studio\Projects\Arquivos\uListaDiretorio.pas=C:\Users\55479\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/09 21:03:18.000.497,C:\Users\55479\Documents\Embarcadero\Studio\Projects\Arquivos\Arquivos.dproj=C:\Users\55479\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/07/05 21:50:22.000.896,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\Arquivos.dproj=C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerirArquivo.dproj</Transaction>
+    <Transaction>2020/07/05 21:50:32.000.008,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerirArquivo.dproj=C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerirciaArquivo.dproj</Transaction>
+    <Transaction>2020/07/05 21:50:46.000.807,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerirciaArquivo.dproj=C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerenciaArquivos.dproj</Transaction>
+    <Transaction>2020/07/05 22:58:11.000.642,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\uListaDiretorio.pas=C:\PROJETOS\FMX\Gerenciador de Arquivos\uFrmMain.pas</Transaction>
+    <Transaction>2020/07/05 22:58:11.000.642,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\uListaDiretorio.fmx=C:\PROJETOS\FMX\Gerenciador de Arquivos\uFrmMain.fmx</Transaction>
+    <Transaction>2020/07/05 23:01:01.000.730,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerenciaArquivos.dproj=C:\PROJETOS\FMX\Gerenciador de Arquivos\GerenciaArquivos.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="ZF52352C7D" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>
