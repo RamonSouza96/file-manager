@@ -8,11 +8,14 @@
     <Transaction>2020/07/05 21:50:22.000.896,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\Arquivos.dproj=C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerirArquivo.dproj</Transaction>
     <Transaction>2020/07/05 21:50:32.000.008,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerirArquivo.dproj=C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerirciaArquivo.dproj</Transaction>
     <Transaction>2020/07/05 21:50:46.000.807,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerirciaArquivo.dproj=C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerenciaArquivos.dproj</Transaction>
-    <Transaction>2020/07/05 22:58:11.000.642,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\uListaDiretorio.pas=C:\PROJETOS\FMX\Gerenciador de Arquivos\uFrmMain.pas</Transaction>
     <Transaction>2020/07/05 22:58:11.000.642,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\uListaDiretorio.fmx=C:\PROJETOS\FMX\Gerenciador de Arquivos\uFrmMain.fmx</Transaction>
+    <Transaction>2020/07/05 22:58:11.000.642,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\uListaDiretorio.pas=C:\PROJETOS\FMX\Gerenciador de Arquivos\uFrmMain.pas</Transaction>
     <Transaction>2020/07/05 23:01:01.000.730,C:\Users\T-Gamer\Downloads\Arquivos\Arquivos\GerenciaArquivos.dproj=C:\PROJETOS\FMX\Gerenciador de Arquivos\GerenciaArquivos.dproj</Transaction>
+    <Transaction>2024/02/05 17:49:11.000.906,=F:\PROJETOS\FMX\Android\Gerenciador de Arquivos\Gerenciador 2\Gerenciador de Arquivos\DW.Permissions.Helpers.pas</Transaction>
+    <Transaction>2024/02/06 15:56:13.043,F:\PROJETOS\FMX\Android\Gerenciador de Arquivos\Gerenciador 2\Gerenciador de Arquivos\Main.View.fmx=F:\PROJETOS\FMX\Android\Gerenciador de Arquivos\Gerenciador 2\Gerenciador de Arquivos\uFrmMain.fmx</Transaction>
+    <Transaction>2024/02/06 15:56:13.043,F:\PROJETOS\FMX\Android\Gerenciador de Arquivos\Gerenciador 2\Gerenciador de Arquivos\Main.View.pas=F:\PROJETOS\FMX\Android\Gerenciador de Arquivos\Gerenciador 2\Gerenciador de Arquivos\uFrmMain.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile Android="ZF52352C7D" Android64=""/>
+		<NoProfile Android="192.168.0.4:5555" Android64=""/>
 	</ActiveMobileDevice>
 </BorlandProject>
