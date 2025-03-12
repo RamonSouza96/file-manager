@@ -1,21 +1,30 @@
-# file-manager![Sem título-1](https://user-images.githubusercontent.com/34917070/169325401-d6fda991-96b1-437c-a1ce-edfd0a6d4cee.png)
+# File Manager
 
-# file-manager
+![File Manager](https://user-images.githubusercontent.com/34917070/169325401-d6fda991-96b1-437c-a1ce-edfd0a6d4cee.png)
 
-Projeto desenvolvido e testado no Android 11 e 14 com Delphi 12.2.
+## 📌 Sobre o Projeto
 
-## Descrição
+O **File Manager** é um aplicativo desenvolvido em **Delphi 12.2** para **Android 11 e 14**, permitindo a navegação por pastas e arquivos no armazenamento do dispositivo.  
 
-Este é um projeto de aplicativo Delphi desenvolvido e testado no Android 14 com Delphi 12.2. O aplicativo permite a navegação de pastas e arquivos no armazenamento do dispositivo. Não são necessários componentes adicionais para executar o projeto.
+✅ **Sem necessidade de componentes adicionais**  
+✅ **Interface simples e intuitiva**  
+✅ **Totalmente funcional em versões recentes do Android**  
 
-Desfrute da navegação simples e eficaz de pastas e arquivos em seu dispositivo Android com este aplicativo.
+## 🚀 Tecnologias Utilizadas
 
-## Requisitos
+- **Linguagem:** Object Pascal (Delphi)  
+- **Plataforma:** FireMonkey (FMX)  
+- **Compatibilidade:** Testado no **Android 11 e 14**  
+- **IDE:** Compilado no **Delphi 12.2**  
 
-- Testado no andorid 11 e 14.
-- Compilado no Delphi 12.2 
-- Nenhum componente adicional é necessário para rodar este projeto.
-- 
-## Licença
+## 🔐 Permissões Necessárias
 
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE.md para obter mais detalhes.
+Para acessar os arquivos no armazenamento do dispositivo, o aplicativo solicita as seguintes permissões:
+
+### 📁 Permissões de Armazenamento (Android 11+)
+A partir do **Android 10 (API 29)**, as permissões de armazenamento foram alteradas para aumentar a privacidade dos usuários. No **Android 11+**, o aplicativo precisa da permissão **MANAGE_EXTERNAL_STORAGE** para acessar todos os arquivos.
+
+Permissões solicitadas:  
+```xml
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
