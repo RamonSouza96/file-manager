@@ -4,8 +4,8 @@
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
     <PropertyGroup>
-        <DeviceId Condition="'$(Platform)'=='Android'">192.168.0.4:5555</DeviceId>
-        <DeviceId Condition="'$(Platform)'=='Android64'"/>
+        <DeviceId Condition="'$(Platform)'=='Android'">ZF52352C7D</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='Android64'">67d42177</DeviceId>
         <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
         <DeviceId Condition="'$(Platform)'=='iOSSimARM64'"/>
     </PropertyGroup>
@@ -58,15 +58,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\GerenciaArquivos.classes" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>GerenciaArquivos\classes\</RemoteDir>
-            <RemoteName>GerenciaArquivos.classes</RemoteName>
-            <DeployClass>AndroidClasses</DeployClass>
-            <Operation>64</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
             <RemoteDir>GerenciaArquivos\res\drawable\</RemoteDir>
             <RemoteName>splash_image_def.xml</RemoteName>
@@ -112,15 +103,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>GerenciaArquivos\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>gdbserver</RemoteName>
-            <DeployClass>AndroidGDBServer</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>GerenciaArquivos\res\drawable-ldpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
@@ -139,15 +121,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_NotificationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>GerenciaArquivos\res\drawable-xxhdpi\</RemoteDir>
-            <RemoteName>ic_notification.png</RemoteName>
-            <DeployClass>Android_NotificationIcon72</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>GerenciaArquivos\res\drawable-normal\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
@@ -161,6 +134,15 @@
             <RemoteDir>GerenciaArquivos\res\drawable-hdpi\</RemoteDir>
             <RemoteName>ic_notification.png</RemoteName>
             <DeployClass>Android_NotificationIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_NotificationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>GerenciaArquivos\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_notification.png</RemoteName>
+            <DeployClass>Android_NotificationIcon72</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -229,6 +211,15 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="Android\Debug\colors-night-v21.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>GerenciaArquivos\res\values-night-v21\</RemoteDir>
+            <RemoteName>colors.xml</RemoteName>
+            <DeployClass>Android_ColorsDark</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="Android\Debug\libGerenciaArquivos.so" Condition="'$(Config)'=='Debug'">
             <RemoteDir>GerenciaArquivos\library\lib\armeabi-v7a\</RemoteDir>
             <RemoteName>libGerenciaArquivos.so</RemoteName>
@@ -251,7 +242,8 @@
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='Win32'"/>
     <ItemGroup Condition="'$(Platform)'=='Win64'"/>
-    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSSimARM64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win64x'"/>
+    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
 </Project>

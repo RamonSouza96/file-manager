@@ -6,7 +6,6 @@ object FormMain: TFormMain
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnActivate = FormActivate
   OnShow = FormShow
   DesignerMasterStyle = 3
   object ListViewLista: TListView
@@ -1058,7 +1057,6 @@ object FormMain: TFormMain
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TextSettings.Font.StyleExt = {00070000000000000004000000}
-        TextSettings.Trimming = None
         OnClick = BtnFimClick
       end
     end

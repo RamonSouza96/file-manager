@@ -40,14 +40,11 @@ type
     procedure ListViewListaItemClickEx(const Sender: TObject; ItemIndex: Integer;
       const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
     procedure BtnFimClick(Sender: TObject);
-    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
     procedure PopularListView(ADiretorio: string);
-    procedure SolicitarPermissaoGerenciamento;
-    procedure SolicitarPermissoes;
   end;
 
 var
@@ -62,68 +59,9 @@ uses FMX.DialogService,
      Androidapi.JNI.JavaTypes,
      Androidapi.Helpers,
      DW.Permissions.Helpers,
-     System.Permissions,
-     Androidapi.JNI.GraphicsContentViewText,
-     Androidapi.JNI.Net,
-     Androidapi.JNI.App,
-     Androidapi.JNI.Provider;
+     System.Permissions;
 
 { TForm1 }
-
-
-procedure TFormMain.SolicitarPermissaoGerenciamento;
-var
-  LIntent: JIntent;
-begin
-  if (TJBuild_VERSION.JavaClass.SDK_INT >= 30) then // Android 11+ (API 30+)
-  begin
-    if TJEnvironment.JavaClass.isExternalStorageManager then
-    begin
-      PopularListView('/storage/emulated/0');
-    end
-    else
-    begin
-      try
-        LIntent := TJIntent.Create;
-        LIntent.setAction(TJSettings.JavaClass.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
-        LIntent.setData(TJnet_Uri.JavaClass.parse(StringToJString('package:' + JStringToString(TAndroidHelper.Context.getPackageName))));
-        TAndroidHelper.Context.startActivity(LIntent);
-      except
-        ShowMessage('Erro ao solicitar permissão!');
-      end;
-    end;
-  end;
-end;
-
-procedure TFormMain.SolicitarPermissoes;
-begin
-  if TJBuild_VERSION.JavaClass.SDK_INT < 30 then
-  begin
-    // Para Android 10 ou inferior, solicita permissões normais
-    PermissionsService.RequestPermissions(
-      ['android.permission.READ_EXTERNAL_STORAGE', 'android.permission.WRITE_EXTERNAL_STORAGE'],
-      procedure(const APermissions: TPermissionArray; const AGrantResults: TPermissionStatusArray)
-      begin
-        if AGrantResults.AreAllGranted then
-        begin
-          PopularListView('/storage/emulated/0');
-        end
-        else
-          ShowMessage('Permissão negada!');
-      end
-    );
-  end
-  else
-  begin
-    // Para Android 11+ (API 30+), precisa da permissão especial
-    SolicitarPermissaoGerenciamento;
-  end;
-end;
-
-procedure TFormMain.FormActivate(Sender: TObject);
-begin
-  PopularListView('/storage/emulated/0');
-end;
 
 procedure TFormMain.FormShow(Sender: TObject);
 begin
@@ -134,7 +72,13 @@ begin
   ImgPrior.Visible     := False;
   ImgNext.Visible      := False;
 
-  SolicitarPermissoes;
+  PermissionsService.RequestPermissions(['android.permission.READ_EXTERNAL_STORAGE', 'android.permission.WRITE_EXTERNAL_STORAGE'],
+    procedure(const APermissions: TPermissionArray; const AGrantResults: TPermissionStatusArray)
+    begin
+      if AGrantResults.AreAllGranted then
+        PopularListView('/storage/emulated/0');
+    end
+  );
 end;
 
 procedure TFormMain.PopularListView(ADiretorio: string);

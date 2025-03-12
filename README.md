@@ -2,18 +2,18 @@
 
 # file-manager
 
-Projeto desenvolvido e testado no Android 11 com Delphi 11.2.
+Projeto desenvolvido e testado no Android 11 e 14 com Delphi 12.2.
 
 ## Descrição
 
-Este é um projeto de aplicativo Delphi desenvolvido e testado no Android 11 com Delphi 11.2. O aplicativo permite a navegação de pastas e arquivos no armazenamento do dispositivo. Não são necessários componentes adicionais para executar o projeto. Ele faz uso da classe `DW.Permissions.Helpers.pas` para solicitar permissões de armazenamento e creditamos o autor original, Kastry Dave Nottage, por essa contribuição.
+Este é um projeto de aplicativo Delphi desenvolvido e testado no Android 14 com Delphi 12.2. O aplicativo permite a navegação de pastas e arquivos no armazenamento do dispositivo. Não são necessários componentes adicionais para executar o projeto.
 
 Desfrute da navegação simples e eficaz de pastas e arquivos em seu dispositivo Android com este aplicativo.
 
 ## Requisitos
 
-- Android 11 ou superior.
-- Delphi 11.2 ou superior.
+- Testado no andorid 11 e 14.
+- Compilado no Delphi 12.2 
 - Nenhum componente adicional é necessário para rodar este projeto.
 - 
 ## Licença
